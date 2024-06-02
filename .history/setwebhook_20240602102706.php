@@ -1,8 +1,11 @@
 <?php
+
 include 'config.php';
 
+// Your webhook URL
 
-
+// Telegram API URL to set the webhook
+$apiUrl = "https://api.telegram.org/bot$token/setWebhook";
 
 // Setting the webhook using PHP
 $params = [

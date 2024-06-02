@@ -1,10 +1,14 @@
 <?php
+
 include 'config.php';
 
+// Your webhook URL
+$webhookUrl = 'https://hooks.axumcode.com';
 
+// Telegram API URL to set the webhook
+$apiUrl = "https://api.telegram.org/bot$token/setWebhook";
 
-
-// Setting the webhook using PHP
+// Set the webhook using PHP
 $params = [
     'url' => $webhookUrl
 ];

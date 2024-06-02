@@ -1,8 +1,10 @@
 <?php
+
 include 'config.php';
 
+// Your webhook URL
 
-
+// Telegram API URL to set the webhook
 
 // Setting the webhook using PHP
 $params = [
