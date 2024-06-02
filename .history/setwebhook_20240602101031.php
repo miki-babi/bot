@@ -12,6 +12,8 @@ $apiUrl = "https://api.telegram.org/bot$token/setWebhook";
 $params = [
     'url' => $webhookUrl
 ];
+
+jkj
 $options = [
     'http' => [
         'header'  => "Content-type: application/x-www-form-urlencoded\r\n",

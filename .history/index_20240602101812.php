@@ -1,7 +1,7 @@
 <?php
 
-include 'config.php';
-include 'functions.php';
+$token = '6704873209:AAEMABF5SHvx25LByHgBHbliaNyBp6m_66A';
+
 // Read  JSON 
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
