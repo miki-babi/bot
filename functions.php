@@ -1,4 +1,5 @@
 <?php 
+// use methods.php 
 function sendMessage($chatId, $message) {
     global $token;
     $url = "https://api.telegram.org/bot$token/sendMessage";
