@@ -1,14 +1,14 @@
 <?php
 
-// Include the TelegramBot class
+
 include 'config.php';
 include 'Methods.php';
 
 
-// Instantiate the TelegramBot class with your bot token
+// Instantiate the class with your bot token
 $bot = new TelegramBot($token);
 
-// Long-polling to get updates
+// Long-poll for updates
 $update = json_decode(file_get_contents('php://input'), true);
 
 // Check if there is a message
@@ -22,6 +22,8 @@ if (isset($update['message'])) {
             [['text' => 'Button 1', 'callback_data' => 'button1']],
             [['text' => 'Button 2', 'callback_data' => 'button2']]
         ];
+
+        
         $inlineKeyboardMarkup = $bot->createInlineKeyboard($inlineKeyboard);
         
 
