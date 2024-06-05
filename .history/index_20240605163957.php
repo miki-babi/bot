@@ -38,12 +38,12 @@ if (isset($update['message'])) {
         $chatId = $callbackQuery['message']['chat']['id'];
         $callbackData = $callbackQuery['data'];
     
-        // action for call back data
+        // Check the callback data and perform actions accordingly
         if ($callbackData == 'button1') {
-            // button 1 is clicked message
+            // Send a message when button 1 is clicked
             $bot->sendMessage($chatId, 'Button 1 was clicked!');
         } elseif ($callbackData == 'button2') {
-            //  button 2 is clicked message
+            // Send a message when button 2 is clicked
             $bot->sendMessage($chatId, 'Button 2 was clicked!');
         }
     }
